@@ -13,87 +13,247 @@
 	<meta property="og:url" content="https://leonyipa.com"/>
 	<link rel="canonical" href="https://leonyipa.com"/>
 	<meta property="og:image" content="//leonyipa.com/img/preview.png?v=1.1"/>
-	<link rel='shortcut icon' type="image/png" href="/img/favicon.png"/>
+	<link rel='shortcut icon' type="image/png" href="img/favicon.png"/>
 	<link rel="stylesheet" href="/style.css?v=1.19">
 </head>
 <body>
 <div class="header">
-	<div style="display:inline-block; cursor: pointer" onclick="window.open('#welcome','_self')" style="cursor: pointer">
-		Leon Yip
-	</div>
 	<div style="float: right; display:inline-block">
-		<span onclick="window.open('#work','_self')" style="cursor: pointer">Work</span> |
-		<span onclick="window.open('#story','_self')" style="cursor: pointer">Story</span> |
-		<span onclick="window.open('#contact','_self')" style="cursor: pointer">Contact</span>
+		<div class="header-button" onclick="window.open('#work','_self')" style="margin-right:18px;">Work</div>
+		<div class="header-button" onclick="window.open('#about','_self')" style="margin-right:18px;">About</div>
+		<div class="header-button" onclick="window.open('#books','_self')" style="margin-right:18px;">Books</div>
+		<div class="header-button" onclick="window.open('#podcasts','_self')" style="margin-right:18px;">Podcasts</div>
+		<div class="header-button" onclick="window.open('#contact','_self')">Contact</div>
 	</div>
 </div>
+<div style="height:40px;width:100%;background-color:#000"></div>
 <div class="container">
-	<div id="welcome" class="fullImage" style="background-image: url('/img/leonBG.png?v=1.1');">
-			<h1>Leon Yip</h1>
-			<span>Engineering · Designing · Investing</span>
-			<ul>
-				<li>Build Good Things. Create Great Values.</li>
-			</ul>
-	</div>
-	<div id="work"  class="fullImage" style="background-image: url('/img/playemioBG.png');">
-			<h1>Playem.io</h1>
-			<span>Game Studio · 1 Million Monthly Users</span>
-			<ul>
-				<li>Developed 8 products, like Swordz.io, Fightz.io, GunWars.io, Throwz.io, Shootz.io, etc.</li>
-			</ul>
-			<div>
-			<span onclick="window.open('https://www.youtube.com/watch?v=IlqjRgvrco8')" style="color:#2790F4; cursor: pointer">Watch Swordz.io ></span>
-			<span onclick="window.open('https://playem.io')" style="color:#2790F4; cursor: pointer; margin-left:20px">Visit Playem.io ></span>
+	<div id="welcome" class="fullImage" style="background-image: url('img/storyBG2.png?v=1.1');">
+		<div class="video-wrapper">
+			<video preload="metadata" autoplay loop muted playsinline  oncontextmenu="return false;" class="background-video">
+			  <source type="video/mp4" src="video/bg1.mp4">
+			  Your browser does not support the video tag.
+			</video>
+			
+			<div class="content-overlay">
+				<h1>Hi, I'm Leon Yip.</h1>
+				<span style="white-space: pre-line;text-align:center">I build games and websites. 
+				
+				“Compound interest is the eighth wonder of the world.”
+				</span>
 			</div>
-			<div class="smallImage" style="background-image: url('/img/playemioThumb.png');"></div>
+		</div>
+	
+		
+	</div>
+	<div id="work"  class="fullImage" style="background-image: url('img/playemioBG.png');">
+		<div class="wrapper">
+			<h1>Playem.io</h1>
+			<span style="white-space: pre-line;text-align:center">Game Studio · 1M+ MAU
+			
+			“Developed 8 products with 1M+ MAU at peak. Products include: Swordz.io, Fightz.io, GunWars.io, Throwz.io, Shootz.io...”
+			</span>
+			<div style="padding-top:20px">
+				<span onclick="window.open('https://www.youtube.com/watch?v=IlqjRgvrco8')" style="color:#2790F4; cursor: pointer">Watch Swordz.io ></span>
+				<span onclick="window.open('https://playem.io')" style="color:#2790F4; cursor: pointer; margin-left:20px">Visit Playem.io ></span>
+			</div>
+			<div class="smallImage" style="background-image: url('img/playemioThumb.png');"></div>
+		</div>
 	</div>
 	
-	<div class="fullImage" style="background-image: url('/img/fightzioBG.png');">
+	<div class="fullImage" style="background-image: url('img/fightzioBG.png');">
+		<div class="wrapper">
 			<h1>Fightz.io</h1>
-			<span>Children Online Game · 5 Million Plays</span>
-			<ul>
-				<li>Allow players to fight monsters, explore places and unlock weapons and ride animals.</li>
-			</ul>
-			<div>
+
+			<span style="white-space: pre-line;text-align:center">Online Game · 5M+ Total Plays
+			
+			“Allow players to fight monsters, explore places and unlock weapons and ride animals.”
+			</span>
+			
+			<div style="padding-top:20px">
 				<span onclick="window.open('https://www.youtube.com/watch?v=SEsU7iIN9r8')" style="color:#2790F4; cursor: pointer;">Watch Fightz.io ></span>
 				<span onclick="window.open('https://fightz.io')" style="color:#2790F4; cursor: pointer; margin-left:20px">Play Fightz.io ></span>
 			</div>
-			<div class="smallImage" style="background-image: url('/img/fightzioThumb2.png');"></div>
-
-	</div>
-	
-	<div class="fullImage" style="background-image: url('/img/gleamplayBG.png');">
-			<h1>Gleamplay.com</h1>
-			<span>Online Game Directory · 30 Million Pageviews</span>
-			<ul>
-				<li>Listing games of different genres from Shooting Games, to Board Games, to Social Games.</li>
-			</ul>
-			<span onclick="window.open('https://gleamplay.com')" style="color:#2790F4; cursor: pointer">Learn more ></span>
-			<div class="smallImage" style="background-image: url('/img/gleamplayThumb.png');"></div>
+			<div class="smallImage" style="background-image: url('img/fightzioThumb2.png');"></div>
+		</div>
 	</div>
 	
 	<div class="fullImage" style="background-color:#F5F5F7; color:#8B8B90">
-			<h1>Investment Research</h1>
-			<span>Investment Research · Data Analysis</span>
-			<ul>
-				<li>Value investing on innovative technologies and high-quality businesses.</li>
-			</ul>
-			<!--<span onclick="window.open('/reports/','_self')" style="color:#2790F4; cursor: pointer">Learn more ></span>-->
+		<div class="wrapper">
+			<h1>Investments</h1>
+			<span>“I mainly follow principles such as Fundamental Analysis and Long-Term Thinking.”</span>
+			<div style="padding-top:20px">
+				<span style="color:#2790F4; cursor: pointer; margin-left:20px">Learn More ></span>
+			</div>
+		</div>
 	</div>
 	
-	<div id="story" class="fullImage" style="background-image: url('/img/storyBG.png?v1.12');">
-		<h1>My Story</h1>
-		<span>"I just love building things and making my ideas a reality."</span>
-		<div style="margin-top: 20px;">
-			<span onclick="window.open('/story/','_self')" style="color:#2790F4; cursor: pointer">Read more ></span><br />
+	<div id="about" class="fullImage" style="background-image: url('img/storyBG.png?v1.12');">
+		<div class="wrapper">
+			<h1>About</h1>
+			<span style="white-space: pre-line;text-align:center">9+ Years Coding · HKU (CompSci)
+			
+			I hav</span>
+			<div style="margin-top: 20px;">
+				<span onclick="window.open('/story/','_self')" style="color:#2790F4; cursor: pointer">Read more ></span><br />
+			</div>
+		</div>
+	</div>
+	
+	<div id="books" class="fullImage">
+		<div class="wrapper">
+			<h1>Books</h1>
+			<span style="white-space: pre-line;text-align:left">“These are some of the books that I really enjoy.”</span>
+			<div style="margin-top: 20px;">
+				<span style="color:#2790F4; cursor: pointer">Learn more ></span><br />
+			</div>
+		</div>
+	</div>
+	
+	<div id="podcasts" class="fullImage">
+		<div class="wrapper">
+			<h1>Podcasts</h1>
+			<span style="white-space: pre-line;text-align:left">“These are some of the podcasts that I really enjoy.”</span>
+			<div style="margin-top: 20px;">
+				<span style="color:#2790F4; cursor: pointer">Learn more ></span><br />
+			</div>
 		</div>
 	</div>
 	
 	<div id="contact"  class="fullImage">
-		<h1>Contact</h1>
-		<span>Email: leonyipa@gmail.com</span>
-		<span>LinkedIn: linkedin.com/in/leonyipa/</span>
+		<div class="wrapper">
+			<h1>Contact</h1>
+			<span style="white-space: pre-line;text-align:left">Follow me, connect with me or send me a message on Linkedin.</span>
+			<div style="margin-top: 20px;">
+				<span onclick="window.open('https://linkedin.com/in/leonyipa/','_blank')" style="color:#2790F4; cursor: pointer">Linkedin ></span><br />
+			</div>
+		</div>
 	</div>
 </div>
 </body>
 </html>
+<style>
+body,html {
+	height: 100%;
+	margin: 0;
+	color: #fff;
+	font-family: 'Muli', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+	background-color: #000;
+}
+
+.header {
+	top: 0;
+	left: 0;
+	right: 0;
+	background: rgba(22, 22, 22, .8);
+	padding: 10px 40px;
+	position: fixed;
+	
+	z-index:999;
+}
+
+.header-button{
+	cursor: pointer;
+	display:inline-block;
+	text-align:center;
+	color:#D1D4D5;
+}
+
+.header-button:hover{
+	color:#FFF;
+}
+
+.container {
+	height: 100%;
+}
+
+.wrapper {
+	max-width: 700px;
+	
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	flex-direction: column;
+}
+
+.fullImage {
+	height: 100%; 
+
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	flex-direction: column;
+	
+	overflow:hidden;
+}
+
+.smallImage {
+	margin-top: 20px;
+	
+	border-radius: 25px;
+	border: 5px solid #333;
+	width: 300px;
+	height: 200px;
+	display: inline-block;
+	
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.containerArticle {
+	margin-top: 58px;
+	padding-bottom: 50px;
+	
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	flex-direction: column;
+	
+	color:#8B8B90;
+	background-color:#F5F5F7; 
+}
+
+.containerArticleDiv {
+	margin: 0 20%;
+	
+	white-space: pre-line;
+}
+
+@media only screen and (max-width: 600px) {
+	.containerArticleDiv {
+		margin: 0 10%;
+	}
+}
+
+.video-wrapper {
+  position: relative;     /* Establishes positioning context for children */
+  width: 100%;            /* Define your custom width */
+  height: 100%;          /* Define your custom height */
+  overflow: hidden;       /* Crops any video parts expanding past boundaries */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;      /* Forces video to fill container without distortion */
+  z-index: 1;             /* Keeps video at the lowest layout stack layer */
+}
+
+.content-overlay {
+  position: relative;     /* Allows it to respect the z-index placement stack */
+  z-index: 2;             /* Higher than video z-index, pushing text to front */
+  color: #ffffff;         /* Text color customization */
+  text-align: center;
+}
+</style>

@@ -35,7 +35,7 @@
 			</video>
 			
 			<div class="content-overlay">
-				<h1>Hi, I'm Leon Yip.</h1>
+				<h1 id="animation1">Hi, I'm Leon Yip.</h1>
 				<span style="white-space: pre-line;text-align:center">I build games and websites.
 				</span>
 				<div style="padding-top:20px">
@@ -113,3 +113,46 @@
 </div>
 </body>
 </html>
+<script>
+async function startTypingAnimation(elementId, text, typeSpeed = 300, deleteSpeed = 300, pauseTime = 1500) {
+  const element = document.getElementById(elementId);
+  const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
+  
+  let showCursor = true;
+
+  // Independent loop to toggle the cursor visibility state
+  setInterval(() => {
+    showCursor = !showCursor;
+  }, 400);
+
+  while (true) {
+    // Typing loop
+    for (let i = 0; i <= text.length; i++) {
+      // We manually append the text character '|' based on the interval state
+      element.innerText = text.substring(0, i) + (showCursor ? '|' : ' ');
+      await sleep(typeSpeed);
+    }
+    
+    // Holding loop (keeps cursor blinking while text is frozen)
+    const holdEnd = Date.now() + pauseTime;
+    while (Date.now() < holdEnd) {
+      element.innerText = text + (showCursor ? '|' : ' ');
+      await sleep(50); // High refresh rate to keep blink responsive
+    }
+    
+    // Deleting loop
+    for (let i = text.length; i >= 0; i--) {
+      element.innerText = text.substring(0, i) + (showCursor ? '|' : ' ');
+      await sleep(deleteSpeed);
+    }
+    
+    // Empty screen holding loop
+    const emptyEnd = Date.now() + 500;
+    while (Date.now() < emptyEnd) {
+      element.innerText = "" + (showCursor ? '|' : ' ');
+      await sleep(50);
+    }
+  }
+}
+startTypingAnimation('animation1', `Hi, I'm Leon Yip.`);
+</script>

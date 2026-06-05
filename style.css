@@ -121,3 +121,9 @@ body,html {
   color: #ffffff;         /* Text color customization */
   text-align: center;
 }
+
+.blue-button{
+	color:#2790F4;
+	cursor: pointer;
+	margin:0 10px;
+}

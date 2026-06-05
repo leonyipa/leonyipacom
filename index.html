@@ -113,7 +113,7 @@
 </body>
 </html>
 <script>
-async function startTypingAnimation(elementId, text, typeSpeed = 300, deleteSpeed = 300, pauseTime = 1500) {
+async function startTypingAnimation(elementId, text, typeSpeed = 200, deleteSpeed = 200, pauseTime = 10000) {
   const element = document.getElementById(elementId);
   const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
   

@@ -19,10 +19,10 @@
 <body>
 <div class="header">
 	<div style="float: right; display:inline-block">
-		<div class="header-button" onclick="window.open('#work','_self')" style="margin-right:18px;">Work</div>
-		<div class="header-button" onclick="window.open('#about','_self')" style="margin-right:18px;">About</div>
-		<div class="header-button" onclick="window.open('#books','_self')" style="margin-right:18px;">Books</div>
-		<div class="header-button" onclick="window.open('#welcome','_self')">Contact</div>
+		<div class="header-button" onclick="changeSection('work');" style="margin-right:18px;">Work</div>
+		<div class="header-button" onclick="changeSection('about');" style="margin-right:18px;">About</div>
+		<div class="header-button" onclick="changeSection('books');" style="margin-right:18px;">Books</div>
+		<div class="header-button" onclick="changeSection('welcome');">Contact</div>
 	</div>
 </div>
 <div style="height:40px;width:100%;background-color:#000"></div>
@@ -168,4 +168,17 @@ async function startTypingAnimation(elementId, text, typeSpeed = 200, deleteSpee
   }
 }
 //startTypingAnimation('animation1', `👋`);
+
+let changeSection = function(section){
+	if (!(section == 'work' || section == 'about' || section == 'books' || section == 'welcome'))
+		return;
+		
+	document.getElementById('work').style.display = 'none';
+	document.getElementById('about').style.display = 'none';
+	document.getElementById('books').style.display = 'none';
+	document.getElementById('welcome').style.display = 'none';
+	
+	document.getElementById(section).style.display = 'block';
+}
+changeSection('welcome');
 </script>
